@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+	/* so that aspect ratio is kept even if height is declared in markup */
+	border: 0;
+	/* this stops a border if the image is inside a link */
+}
+
+/* This is a CSS comment
+Always comment your work to explain what you are doing. */
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+/*
+background color defaults
+Note that HTML and CSS use American spelling (color not colour). */
+body {
+	background-color: orange;
+}
+header {
+	background-color: #58734A;
+}
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+	text-align: center;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size:50px;
+	font-family: 'Gloria Hallelujah', cursive;
+    color: #FFFFFF; /* white */
+    text-transform: uppercase;
+   } 
+h2 {
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+   }
+footer {
+	color: black
+   }
+p {
+	color: black;
+	font-size: 20px;
+}
+li {
+	color: black;
+	font-size: 20px
+}
+blockquote {
+	font-family: 'Arial', sans-serif;
+}
+h1,h2,p,li {
+            padding-bottom: 0.6em; 
+           }
+
+
+.item {
+       background-color: lightgreen;
+       padding:1%;
+       margin:1%; 
+       margin-bottom: 20px; 
+       margin-top: 20px; 
+       border-radius:10px;
+}
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto; 
+      }
+
+/* let's talk about nesting */ 
+.item li {
+          margin-left: 25px;
+}
+blockquote {
+text-transform: uppercase; 
+font-style: italic;
+}
+
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+background: white; 
+color: black;
+padding: 5px; 
+text-decoration: none; 
+border-radius: 5px;
+}
+nav a:hover {
+background: orange;
+}
+body {
+background-color: black;
+background-image: url(BG.jpg); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+/* Media Query - Responsive */
+@media screen and (min-width: 500px ) { 
+body {
+background-color: #7903B6;
+font-family: 'Arial', sans-serif;
+}
+.item {
+background-color: rgba(246,246,246,0.90);
+} 
+h2{
+font-family: 'Bebas Neue', cursive; }
+}
+@media screen and (min-width: 768px){ 
+body {
+background-color: black; 
+background-image: url(BG.jpg); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+.item {
+
+background-color: 102,102,204,0.9; 
+
+}
+        footer {
+        color: white;
+        clear: both; 
+	}}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
